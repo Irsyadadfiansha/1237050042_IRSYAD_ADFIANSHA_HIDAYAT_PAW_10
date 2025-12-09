@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Modern PWA Example</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/style.css">
+<meta name="theme-color" content="#1e88e5">
+</head>
+<body>
+<header class="topbar">
+<div class="brand">PWA Modern</div>
+<nav class="nav">
+<a href="/index.html" class="nav-link">Home</a>
+<a href="/about.html" class="nav-link">About</a>
+</nav>
+<div class="controls">
+<button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+</div>
+<button class="hamburger" id="menu-toggle" aria-label="Toggle menu">☰</button>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<h1>Welcome to Modern PWA</h1>
+<p class="lead">Fast, offline-capable, installable — with a clean UI and animations.</p>
+<div class="hero-actions">
+<button id="install-btn" class="btn primary">Install App</button>
+<button id="notify-btn" class="btn">Show Notification</button>
+</div>
+</section>
+
+
+<section class="cards-section" aria-live="polite">
+<h2>Items (dynamic)</h2>
+<div id="cards" class="cards"></div>
+</section>
+
+
+<section class="updates">
+<h2>Latest Update</h2>
+<article class="update-card" id="update-card">
+<h3>Offline-ready improvements</h3>
+<p>This app caches assets and shows an offline page when network fails.</p>
+</article>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div>© <span id="year"></span> PWA Modern</div>
+<div class="footer-links"><a href="/offline.html">Offline page</a></div>
+</footer>
+
+
+<script src="/app.js" type="module"></script>
+</body>
+</html>

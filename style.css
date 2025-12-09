@@ -1,0 +1,46 @@
+:root{
+--bg: #ffffff;
+--surface: #f7fbff;
+--text: #0f1724;
+--muted: #6b7280;
+--accent: #1e88e5;
+--card-shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+[data-theme="dark"]{
+--bg: #0b1220;
+--surface: #071022;
+--text: #e6eef8;
+--muted: #9aa6b2;
+--accent: #4fb3ff;
+--card-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.topbar{display:flex;align-items:center;gap:12px;padding:12px 18px;background:linear-gradient(90deg,var(--surface),transparent);position:sticky;top:0;z-index:50}
+.brand{font-weight:700}
+.nav{display:flex;gap:12px;margin-left:12px}
+.nav-link{color:var(--text);text-decoration:none;padding:6px 8px;border-radius:8px}
+.nav-link.active{background:rgba(0,0,0,0.06)}
+.controls{margin-left:auto}
+.hamburger{display:none}
+.container{max-width:1000px;margin:28px auto;padding:0 16px}
+.hero{padding:28px;background:linear-gradient(180deg,rgba(30,136,229,0.08),transparent);border-radius:12px;margin-bottom:18px;transition:transform .35s ease;}
+.hero .lead{color:var(--muted)}
+.hero-actions{margin-top:12px;display:flex;gap:8px}
+.btn{padding:8px 12px;border:0;border-radius:10px;background:transparent;cursor:pointer}
+.btn.primary{background:var(--accent);color:white}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:12px}
+.card{background:var(--surface);border-radius:12px;padding:10px;box-shadow:var(--card-shadow);display:flex;gap:12px;align-items:center;transform:translateY(12px);opacity:0;transition:all .5s ease}
+.card.reveal{transform:none;opacity:1}
+.card img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+.card-body h3{margin:0 0 6px 0}
+.site-footer{padding:18px;text-align:center;color:var(--muted)}
+.center{display:flex;flex-direction:column;align-items:center;justify-content:center;height:70vh}
+.offline-page{background:var(--bg)}
+.muted{color:var(--muted)}
+.menu-open .nav{display:block}
+@media (max-width:700px){
+.nav{display:none}
+.hamburger{display:block;margin-left:8px}
+}

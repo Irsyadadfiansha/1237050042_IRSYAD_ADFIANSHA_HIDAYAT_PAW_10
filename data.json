@@ -1,0 +1,5 @@
+[
+{ "id": 1, "title": "Item One", "description": "A short description for item one.", "image": "/images/icons/icon-192x192.png" },
+{ "id": 2, "title": "Item Two", "description": "A short description for item two.", "image": "/images/icons/icon-192x192.png" },
+{ "id": 3, "title": "Item Three", "description": "A short description for item three.", "image": "/images/icons/icon-192x192.png" }
+]
